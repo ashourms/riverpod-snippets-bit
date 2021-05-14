@@ -2,7 +2,7 @@
   "name": "Riverpod-Snippets-Bit",
 	"displayName": "Riverpod Snippet Bit",
 	"description": "A List of main Riverpod Snippets to speed up your development workflow",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "comcoderavineashourms",
     "author": "Mohammed Ashour [@ashourms]",
 	"engines": {
