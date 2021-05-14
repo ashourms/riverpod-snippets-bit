@@ -1,0 +1,80 @@
+{
+	"riverpod consumer": {
+		"prefix": "rpconsumer",
+		"body": [
+			"Consumer(",
+            "\tbuilder: (context, watch, child) {",
+			"\t\tfinal $1 = watch($2);",
+			"\t\treturn $0",
+            "}),"
+		],
+		"description": "Creates a Consumer widget to obtain a Provider of Riverpod"
+	},
+	"riverpod provider":{
+		"prefix": "rpprovider",
+		"body":[
+			"final $1Provider = Provider<$2>((ref) {",
+			"\treturn $0;",
+			"});"
+		],
+		"description": "Creates a simple riverpod provider that exposes a read-only value"
+	},
+	"riverpod future Provider":{
+		"prefix": "rpfprovider",
+		"body":[
+			"final $1Provider = FutureProvider<$2>((ref) async{",
+			"\treturn $0;",
+			"});"
+		],
+		"description": "Creates a future riverpod provider that asynchronously creates a single value"
+	},
+	"riverpod future Provider family":{
+		"prefix": "rpffprovider",
+		"body":[
+			"final $1Provider = FutureProvider.family<$2,$3>((ref, $4) async{",
+			"\t$0;",
+			"});"
+		],
+		"description": "Creates a future riverpod provider from an external parameter"
+	},
+	"riverpod stream Provider":{
+		"prefix": "rpsprovider",
+		"body":[
+			"final $1Provider = StreamProvider<$2>((ref) async*{",
+			"\treturn $0;",
+			"});"
+		],
+		"description": "Creates a stream riverpod provider"
+	},
+	"riverpod stateNotifier":{
+		"prefix": "rpsnotifier",
+		"body":[
+			"class $1Notifier extends StateNotifier<$2>{",
+			"\t $1Notifier():super($3);",
+			"}"
+		],
+		"description": "Creates a state notifier class"
+	},
+
+	"riverpod stateNotifier provider":{
+		"prefix": "rpsnotifierp",
+		"body":[
+			"final $1Provider = StateNotifierProvider<$2, $3>((ref){",
+			"\t $0",
+			"});"
+		],
+		"description": "Creates a state notifier provider"
+	},
+	"riverpod consumer widget":{
+		"prefix": "rpsconwidget",
+		"body":[
+			"class $1 extends ConsumerWidget{",
+			"\t@override",
+			"\tWidget build(BuildContext context, ScopedReader watch) {",
+			"\t\treturn $0",
+			"\t}",
+			"}"
+		],
+		"description": "Creates a consumer widget"
+	}
+}

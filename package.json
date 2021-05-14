@@ -1,0 +1,22 @@
+{
+    "name": "Riverpod-Snippets-Bit",
+	"displayName": "Riverpod Snippet Bit",
+	"description": "A List of main Riverpod Snippets to speed up your development workflow",
+	"version": "0.0.1",
+	"publisher": "Coderavine",
+    "author": "Mohammed Ashour [@ashourms]",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+    "contributes": {
+      "snippets": [
+        {
+          "language": "dart",
+          "path": "./snippets.json"
+        }
+      ]
+    }
+  }
